@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cesar Lorenzo | Consultoría Contable Élite Panamá</title>
+    <title>Cesar Lorenzo | Contabilidad y Asesoría Legal-Fiscal Panamá</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -22,192 +22,146 @@
     </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        
-        .glass-dark {
-            background: rgba(15, 23, 42, 0.8);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        
-        .text-gradient {
-            background: linear-gradient(to right, #fff, #00d2ff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .animated-blob {
-            position: absolute;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, rgba(0,210,255,0.15) 0%, rgba(0,51,153,0) 70%);
-            border-radius: 50%;
-            filter: blur(60px);
-            z-index: 0;
-            animation: move 20s infinite alternate;
-        }
-
-        @keyframes move {
-            from { transform: translate(-10%, -10%); }
-            to { transform: translate(20%, 20%); }
-        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; overflow-x: hidden; }
+        .glass-dark { background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .text-gradient { background: linear-gradient(to right, #fff, #00d2ff); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+        .animated-blob { position: fixed; width: 45vw; height: 45vw; background: radial-gradient(circle, rgba(0,210,255,0.08) 0%, rgba(0,51,153,0) 70%); border-radius: 50%; filter: blur(80px); z-index: -1; pointer-events: none; }
     </style>
 </head>
-<body class="bg-panama-dark text-white antialiased overflow-x-hidden">
+<body class="bg-panama-dark text-white antialiased">
 
-    <div class="animated-blob top-[-10%] left-[-10%]"></div>
-    <div class="animated-blob bottom-[-10%] right-[-10%]" style="animation-delay: -5s;"></div>
+    <div class="animated-blob top-[-10%] left-[-10%] animate-pulse"></div>
+    <div class="animated-blob bottom-[-10%] right-[-10%] animate-pulse" style="animation-delay: 3s;"></div>
 
-    <nav class="fixed top-6 left-1/2 -translate-x-1/2 z-[100] w-[90%] max-w-5xl">
-        <div class="glass-dark rounded-full px-6 py-3 flex justify-between items-center border border-white/5 shadow-2xl">
-            <div class="flex items-center gap-3">
-                <span class="text-xl font-extrabold tracking-tighter text-gradient uppercase">CL <span class="text-accent-blue italic">CPA</span></span>
-            </div>
-            <div class="hidden md:flex gap-8 text-xs font-bold uppercase tracking-[0.2em] text-gray-400">
+    <nav class="fixed top-4 left-1/2 -translate-x-1/2 z-[100] w-[92%] max-w-6xl">
+        <div class="glass-dark rounded-full px-6 py-4 flex justify-between items-center shadow-2xl">
+            <span class="text-xl font-extrabold text-gradient uppercase">CL <span class="text-accent-blue italic text-xs">CPA</span></span>
+            <div class="hidden md:flex gap-8 text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400">
+                <a href="#inicio" class="hover:text-accent-blue transition-all">Inicio</a>
                 <a href="#servicios" class="hover:text-accent-blue transition-all">Servicios</a>
-                <a href="#nosotros" class="hover:text-accent-blue transition-all">Trayectoria</a>
-                <a href="#contacto" class="hover:text-accent-blue transition-all">Contacto</a>
+                <a href="#trayectoria" class="hover:text-accent-blue transition-all">Trayectoria</a>
             </div>
-            <a href="tel:63661485" class="bg-white text-panama-dark px-6 py-2 rounded-full font-bold text-xs hover:bg-accent-blue hover:text-white transition-all">
-                LLAMAR AHORA
-            </a>
+            <a href="https://wa.me/50763661485" class="bg-accent-blue text-panama-dark px-4 py-2 rounded-full font-bold text-[10px] hover:scale-105 transition-all">WHATSAPP</a>
         </div>
     </nav>
 
-    <section class="relative min-h-screen flex items-center justify-center pt-20 px-6">
-        <div class="container mx-auto text-center relative z-10">
+    <section id="inicio" class="relative min-h-screen flex items-center justify-center pt-20 px-6">
+        <div class="container mx-auto max-w-5xl text-center z-10">
             <div class="animate__animated animate__fadeInDown">
-                <span class="px-4 py-2 rounded-full border border-accent-blue/30 bg-accent-blue/10 text-accent-blue text-xs font-bold tracking-widest uppercase mb-8 inline-block">
-                    Contabilidad Estratégica en Panamá
-                </span>
+                <span class="px-4 py-2 rounded-full border border-accent-blue/30 bg-accent-blue/10 text-accent-blue text-[10px] font-bold tracking-[0.2em] uppercase mb-6 inline-block">Contador Público Autorizado en Panamá</span>
             </div>
-            <h1 class="text-6xl md:text-[100px] font-extrabold leading-[0.9] mb-8 animate__animated animate__fadeInUp tracking-tighter">
-                Cesar <span class="text-gradient">Lorenzo</span>
-            </h1>
-            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-12 animate__animated animate__fadeInUp animate__delay-1s">
-                Transformando la complejidad fiscal en <span class="text-white font-semibold">tranquilidad financiera</span>. 20 años de experiencia idónea garantizando el cumplimiento de tu negocio.
+            <h1 class="text-6xl md:text-9xl font-extrabold leading-none mb-6 animate__animated animate__fadeInUp tracking-tighter">Cesar <span class="text-gradient">Lorenzo</span></h1>
+            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 animate__animated animate__fadeInUp animate__delay-1s leading-relaxed">
+                Asesoría contable de alto nivel con <span class="text-white font-bold underline decoration-accent-blue decoration-2">20 años de experiencia idónea</span>. Gestionamos su tranquilidad fiscal frente a la DGI y CSS.
             </p>
-            
-            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center animate__animated animate__zoomIn animate__delay-1s">
-                <a href="https://wa.me/50763661485" class="group relative px-10 py-5 bg-accent-blue text-panama-dark font-black text-xl rounded-2xl transition-all hover:scale-105 hover:shadow-[0_0_40px_rgba(0,210,255,0.5)] flex items-center gap-3">
-                    <i class="fab fa-whatsapp text-2xl"></i> WHATSAPP DIRECTO
+            <div class="flex flex-col sm:flex-row gap-4 justify-center animate__animated animate__zoomIn animate__delay-1s">
+                <a href="https://wa.me/50763661485" class="bg-[#25D366] text-white px-8 py-4 rounded-2xl font-black text-lg shadow-[0_0_30px_rgba(37,211,102,0.3)] hover:scale-105 transition-all flex items-center justify-center gap-2">
+                    <i class="fab fa-whatsapp"></i> CHAT DIRECTO
+                </a>
+                <a href="tel:63661485" class="bg-white text-panama-dark px-8 py-4 rounded-2xl font-black text-lg hover:bg-accent-blue transition-all flex items-center justify-center gap-2">
+                    <i class="fas fa-phone-alt"></i> 6366-1485
                 </a>
             </div>
         </div>
     </section>
 
-    <section id="servicios" class="py-32 relative z-10 container mx-auto px-6">
-        <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-6">
-            <div class="max-w-xl">
-                <h2 class="text-4xl md:text-6xl font-bold mb-4 tracking-tight">Servicios <br><span class="text-accent-blue">Especializados</span></h2>
-                <div class="h-1 w-20 bg-accent-blue"></div>
-            </div>
-            <p class="text-gray-400 max-w-xs text-sm">Gestión integral bajo las normativas de la DGI, CSS y Municipios de Panamá.</p>
+    <section id="servicios" class="py-24 container mx-auto px-6 max-w-7xl">
+        <div class="mb-16 text-left">
+            <h2 class="text-4xl md:text-6xl font-bold mb-4 tracking-tight">Servicios <span class="text-accent-blue italic">Contables</span></h2>
+            <div class="h-1.5 w-24 bg-accent-blue rounded-full"></div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="glass-dark p-10 rounded-[2.5rem] hover:border-accent-blue/50 transition-all group overflow-hidden relative">
-                <div class="absolute -right-4 -top-4 text-white/5 text-8xl font-bold group-hover:text-accent-blue/10 transition-all">01</div>
-                <i class="fas fa-file-invoice text-4xl text-accent-blue mb-8"></i>
-                <h3 class="text-2xl font-bold mb-4">Declaración de Renta</h3>
-                <p class="text-gray-400 leading-relaxed">Presentación experta para Personas Naturales y Jurídicas. Optimización de impuestos y cumplimiento estricto ante la DGI.</p>
+            <div class="glass-dark p-8 rounded-[2.5rem] hover:border-accent-blue/50 transition-all group">
+                <i class="fas fa-file-signature text-3xl text-accent-blue mb-6"></i>
+                <h3 class="text-xl font-bold mb-3 text-white">Declaración de Renta</h3>
+                <p class="text-gray-400 text-sm leading-relaxed mb-4">Presentación oportuna para <strong>Personas Naturales y Jurídicas</strong> ante la DGI. Evite multas y optimice sus beneficios fiscales bajo la ley panameña.</p>
+                <span class="text-[10px] text-accent-blue font-bold tracking-widest uppercase">DGI Panamá</span>
             </div>
 
-            <div class="glass-dark p-10 rounded-[2.5rem] hover:border-accent-blue/50 transition-all group overflow-hidden relative">
-                <div class="absolute -right-4 -top-4 text-white/5 text-8xl font-bold group-hover:text-accent-blue/10 transition-all">02</div>
-                <i class="fas fa-shield-alt text-4xl text-accent-blue mb-8"></i>
-                <h3 class="text-2xl font-bold mb-4">Seguro Social (SIPE)</h3>
-                <p class="text-gray-400 leading-relaxed">Gestión de planillas CSS, avisos de entrada y liquidaciones. Mantén a tu personal y tu empresa protegidos.</p>
+            <div class="glass-dark p-8 rounded-[2.5rem] hover:border-accent-blue/50 transition-all group">
+                <i class="fas fa-users-cog text-3xl text-accent-blue mb-6"></i>
+                <h3 class="text-xl font-bold mb-3 text-white">Seguro Social (SIPE)</h3>
+                <p class="text-gray-400 text-sm leading-relaxed mb-4">Gestión completa de <strong>planillas SIPE (CSS)</strong>, avisos de entrada, cálculo de prestaciones, vacaciones y pago de cuotas patronales.</p>
+                <span class="text-[10px] text-accent-blue font-bold tracking-widest uppercase">CSS - Planillas</span>
             </div>
 
-            <div class="glass-dark p-10 rounded-[2.5rem] hover:border-accent-blue/50 transition-all group overflow-hidden relative">
-                <div class="absolute -right-4 -top-4 text-white/5 text-8xl font-bold group-hover:text-accent-blue/10 transition-all">03</div>
-                <i class="fas fa-rocket text-4xl text-accent-blue mb-8"></i>
-                <h3 class="text-2xl font-bold mb-4">Aviso de Operaciones</h3>
-                <p class="text-gray-400 leading-relaxed">Aperturas en Panamá Emprende, licencias comerciales y trámites municipales para iniciar con pie derecho.</p>
+            <div class="glass-dark p-8 rounded-[2.5rem] hover:border-accent-blue/50 transition-all group">
+                <i class="fas fa-store text-3xl text-accent-blue mb-6"></i>
+                <h3 class="text-xl font-bold mb-3 text-white">Aviso de Operaciones</h3>
+                <p class="text-gray-400 text-sm leading-relaxed mb-4">Trámites en <strong>Panamá Emprende</strong>. Aperturas, modificaciones y cierres. Gestión de impuestos municipales y rótulos.</p>
+                <span class="text-[10px] text-accent-blue font-bold tracking-widest uppercase">Municipios / MICI</span>
             </div>
 
-            <div class="glass-dark p-10 rounded-[2.5rem] hover:border-accent-blue/50 transition-all group overflow-hidden relative">
-                <div class="absolute -right-4 -top-4 text-white/5 text-8xl font-bold group-hover:text-accent-blue/10 transition-all">04</div>
-                <i class="fas fa-coins text-4xl text-accent-blue mb-8"></i>
-                <h3 class="text-2xl font-bold mb-4">ITBMS y Remesas</h3>
-                <p class="text-gray-400 leading-relaxed">Cálculo y presentación mensual de impuestos sobre ventas y retenciones a extranjeros.</p>
+            <div class="glass-dark p-8 rounded-[2.5rem] hover:border-accent-blue/50 transition-all group">
+                <i class="fas fa-percentage text-3xl text-accent-blue mb-6"></i>
+                <h3 class="text-xl font-bold mb-3 text-white">ITBMS y Retenciones</h3>
+                <p class="text-gray-400 text-sm leading-relaxed mb-4">Cálculo y presentación de informes de compras (F-43) y declaraciones mensuales de <strong>ITBMS</strong>.</p>
+                <span class="text-[10px] text-accent-blue font-bold tracking-widest uppercase">Formularios DGI</span>
             </div>
 
-            <div class="glass-dark p-10 rounded-[2.5rem] hover:border-accent-blue/50 transition-all group overflow-hidden relative">
-                <div class="absolute -right-4 -top-4 text-white/5 text-8xl font-bold group-hover:text-accent-blue/10 transition-all">05</div>
-                <i class="fas fa-stamp text-4xl text-accent-blue mb-8"></i>
-                <h3 class="text-2xl font-bold mb-4">Certificaciones CPA</h3>
-                <p class="text-gray-400 leading-relaxed">Certificaciones de ingresos para bancos, visas y trámites legales firmadas por profesional idóneo.</p>
+            <div class="glass-dark p-8 rounded-[2.5rem] hover:border-accent-blue/50 transition-all group">
+                <i class="fas fa-certificate text-3xl text-accent-blue mb-6"></i>
+                <h3 class="text-xl font-bold mb-3 text-white">Certificaciones CPA</h3>
+                <p class="text-gray-400 text-sm leading-relaxed mb-4"><strong>Certificaciones de ingresos</strong> para trámites bancarios, visas y préstamos. Firmadas por personal idóneo autorizado.</p>
+                <span class="text-[10px] text-accent-blue font-bold tracking-widest uppercase">Idoneidad Profesional</span>
             </div>
 
-            <div class="glass-dark p-10 rounded-[2.5rem] hover:border-accent-blue/50 transition-all group overflow-hidden relative">
-                <div class="absolute -right-4 -top-4 text-white/5 text-8xl font-bold group-hover:text-accent-blue/10 transition-all">06</div>
-                <i class="fas fa-balance-scale text-4xl text-accent-blue mb-8"></i>
-                <h3 class="text-2xl font-bold mb-4">Auditorías Externas</h3>
-                <p class="text-gray-400 leading-relaxed">Revisiones profundas de estados financieros para asegurar la integridad de su información contable.</p>
+            <div class="glass-dark p-8 rounded-[2.5rem] hover:border-accent-blue/50 transition-all group">
+                <i class="fas fa-balance-scale text-3xl text-accent-blue mb-6"></i>
+                <h3 class="text-xl font-bold mb-3 text-white">Auditorías y Cierres</h3>
+                <p class="text-gray-400 text-sm leading-relaxed mb-4">Auditorías financieras externas y preparación de Estados Financieros de fin de año para entidades bancarias.</p>
+                <span class="text-[10px] text-accent-blue font-bold tracking-widest uppercase">Estados Financieros</span>
             </div>
         </div>
     </section>
 
-    <section id="nosotros" class="py-32 bg-white text-panama-dark rounded-[4rem] mx-4">
-        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-20 items-center">
-            <div>
-                <h2 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-8 leading-none">20 Años <br><span class="text-deep-royal">de Maestría Contable.</span></h2>
-                <p class="text-xl text-gray-600 mb-10 leading-relaxed">
-                    Desde el año 2004, el Licdo. Cesar Lorenzo ha sido el aliado estratégico de cientos de empresas en Panamá, ofreciendo no solo números, sino visión de negocio y seguridad jurídica.
+    <section id="trayectoria" class="py-24 px-6 container mx-auto max-w-7xl">
+        <div class="bg-white text-panama-dark rounded-[3rem] overflow-hidden grid md:grid-cols-2 shadow-2xl">
+            <div class="p-12 md:p-20">
+                <h2 class="text-5xl font-black tracking-tighter mb-6 leading-none italic uppercase">20 Años <br><span class="text-deep-royal">de Respaldo.</span></h2>
+                <p class="text-gray-600 text-lg leading-relaxed mb-8 font-medium">
+                    El Licdo. <strong>Cesar Lorenzo</strong> cuenta con dos décadas de experiencia continua en el mercado panameño, brindando asesoría a Pymes y Grandes Empresas con un enfoque preventivo y estratégico.
                 </p>
-                <div class="grid grid-cols-2 gap-8">
-                    <div>
-                        <span class="text-4xl font-black text-accent-blue block">+500</span>
-                        <span class="text-xs font-bold uppercase tracking-widest text-gray-400">Clientes Atendidos</span>
-                    </div>
-                    <div>
-                        <span class="text-4xl font-black text-accent-blue block">100%</span>
-                        <span class="text-xs font-bold uppercase tracking-widest text-gray-400">Idoneidad Garantizada</span>
-                    </div>
+                <div class="flex gap-10">
+                    <div><p class="text-4xl font-black text-accent-blue">2004</p><p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Inicia Trayectoria</p></div>
+                    <div><p class="text-4xl font-black text-accent-blue">+500</p><p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Casos Exitosos</p></div>
                 </div>
             </div>
-            <div class="relative">
-                <div class="bg-deep-royal h-[500px] w-full rounded-[3rem] overflow-hidden shadow-2xl relative">
-                    <div class="absolute inset-0 flex items-center justify-center p-12 text-center text-white">
-                        <div class="space-y-4">
-                            <i class="fas fa-award text-6xl text-accent-blue"></i>
-                            <h3 class="text-3xl font-bold">CPA Autorizado</h3>
-                            <p class="opacity-70 italic font-light text-lg">"Mi compromiso es su tranquilidad frente a las autoridades fiscales de la República de Panamá."</p>
-                            <p class="font-bold text-accent-blue">- Cesar Lorenzo</p>
-                        </div>
-                    </div>
+            <div class="bg-deep-royal flex items-center justify-center p-12 text-center text-white relative">
+                <div class="z-10">
+                    <i class="fas fa-user-shield text-7xl text-accent-blue mb-6"></i>
+                    <h3 class="text-3xl font-bold mb-2 uppercase">Personal Idóneo</h3>
+                    <p class="opacity-70 text-sm max-w-xs mx-auto italic">"Su aliado de confianza para el cumplimiento legal y fiscal en la República de Panamá."</p>
                 </div>
+                <div class="absolute inset-0 opacity-10 flex items-center justify-center text-[200px] font-black">CPA</div>
             </div>
         </div>
     </section>
 
-    <section id="contacto" class="py-32 px-6 container mx-auto text-center">
-        <h2 class="text-4xl md:text-6xl font-bold mb-12 tracking-tight">¿Listo para ordenar <br>sus <span class="text-gradient">finanzas?</span></h2>
-        
-        <div class="flex flex-col md:flex-row gap-8 justify-center items-stretch">
-            <a href="https://wa.me/50763661485" class="glass-dark p-12 rounded-[3rem] flex-1 hover:bg-accent-blue hover:text-panama-dark transition-all group">
-                <i class="fab fa-whatsapp text-6xl mb-6 group-hover:scale-110 transition-all"></i>
-                <h3 class="text-2xl font-black mb-2 tracking-widest">WHATSAPP</h3>
-                <p class="opacity-60">+507 6366-1485</p>
-                <p class="mt-4 font-bold">Respuesta Inmediata</p>
+    <section id="contacto" class="py-24 container mx-auto px-6 max-w-4xl text-center">
+        <h2 class="text-4xl md:text-6xl font-black mb-12 tracking-tight uppercase">Contacto <span class="text-gradient">Directo</span></h2>
+        <div class="flex flex-col md:flex-row gap-8 justify-center">
+            <a href="https://wa.me/50763661485" class="glass-dark p-12 rounded-[3rem] flex-1 group hover:bg-accent-blue transition-all">
+                <i class="fab fa-whatsapp text-6xl mb-6 text-[#25D366] group-hover:text-panama-dark transition-colors"></i>
+                <p class="text-2xl font-black mb-1 group-hover:text-panama-dark transition-colors tracking-widest">WHATSAPP</p>
+                <p class="text-sm opacity-60 group-hover:text-panama-dark transition-colors">Atención Inmediata</p>
             </a>
-            <a href="tel:63661485" class="glass-dark p-12 rounded-[3rem] flex-1 hover:bg-white hover:text-panama-dark transition-all group border-accent-blue/20">
-                <i class="fas fa-phone-alt text-5xl mb-6 group-hover:scale-110 transition-all"></i>
-                <h3 class="text-2xl font-black mb-2 tracking-widest uppercase">Llamada Directa</h3>
-                <p class="opacity-60">Atención Personalizada</p>
-                <p class="mt-4 font-bold text-accent-blue group-hover:text-panama-dark">6366-1485</p>
+            <a href="tel:63661485" class="glass-dark p-12 rounded-[3rem] flex-1 group hover:bg-white transition-all">
+                <i class="fas fa-phone-alt text-5xl mb-6 text-accent-blue group-hover:text-panama-dark transition-colors"></i>
+                <p class="text-2xl font-black mb-1 group-hover:text-panama-dark transition-colors tracking-widest">LLAMAR</p>
+                <p class="text-sm opacity-60 group-hover:text-panama-dark transition-colors">6366-1485</p>
             </a>
         </div>
     </section>
 
-    <footer class="py-12 text-center text-gray-600 border-t border-white/5">
-        <p class="text-sm tracking-widest uppercase font-bold">&copy; 2026 Cesar Lorenzo | Ciudad de Panamá</p>
+    <footer class="py-12 text-center text-gray-600 text-[10px] tracking-[0.3em] font-bold border-t border-white/5 uppercase">
+        Cesar Lorenzo Contabilidad &copy; 2026 | Ciudad de Panamá
     </footer>
 
-    <a href="https://wa.me/50763661485" class="fixed bottom-8 right-8 z-[200] animate__animated animate__bounceIn">
-        <div class="bg-accent-blue text-panama-dark w-16 h-16 rounded-2xl flex items-center justify-center text-3xl shadow-[0_0_30px_rgba(0,210,255,0.4)] hover:scale-110 active:scale-95 transition-all">
+    <a href="https://wa.me/50763661485" class="fixed bottom-8 right-8 z-[200] group">
+        <div class="absolute -inset-1 bg-accent-blue rounded-2xl blur opacity-20 group-hover:opacity-60 transition duration-1000"></div>
+        <div class="relative bg-accent-blue text-panama-dark w-16 h-16 rounded-2xl flex items-center justify-center text-3xl shadow-2xl transform transition-transform group-hover:scale-110 active:scale-95">
             <i class="fab fa-whatsapp"></i>
         </div>
     </a>
